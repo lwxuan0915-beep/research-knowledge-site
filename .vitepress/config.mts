@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/research-knowledge-site/',
   title: '金属材料科研训练知识库',
   description: '面向本科生科研训练的金属材料知识体系、实验技能与项目实践记录',
   lang: 'zh-CN',
