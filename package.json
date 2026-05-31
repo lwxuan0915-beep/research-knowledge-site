@@ -1,0 +1,14 @@
+{
+  "name": "research-knowledge-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --config .vitepress/config.mts",
+    "build": "vitepress build docs --config .vitepress/config.mts",
+    "preview": "vitepress preview docs --config .vitepress/config.mts"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

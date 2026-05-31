@@ -1,0 +1,25 @@
+﻿docs\index.md	[无 title]
+docs\00-learning-map\index.md	瀛︿範璺嚎鍥?---
+docs\00-learning-map\roadmap.md	瀛︿範璺嚎鍥?description: 璇存槑閲戝睘鏉愭枡绉戠爺璁粌鐭ヨ瘑搴撶殑瀛︿範椤哄簭鍜岄樁娈电洰鏍囥€?level: Level 0
+docs\01-metal-basics\crystal-structure.md	鏅朵綋缁撴瀯鍩虹
+docs\01-metal-basics\defects.md	鏅朵綋缂洪櫡鍩虹
+docs\01-metal-basics\index.md	閲戝睘鏉愭枡鍩虹璇?---
+docs\01-metal-basics\material-science-overview.md	鏉愭枡绉戝涓庨噾灞炴潗鏂欑鐮旇缁冩瑙?description: 甯姪鍒濆鑰呯悊瑙ｉ噾灞炴潗鏂欑鐮旇缁冨叧娉ㄤ粈涔堥棶棰樸€?level: Level 0
+docs\01-metal-basics\structure-process-property.md	宸ヨ壓鈥旂粍缁団€旀€ц兘閫昏緫閾?description: 闈㈠悜閲戝睘鏉愭枡绉戠爺璁粌鐨勬牳蹇冨垎鏋愭鏋讹紝绯荤粺姊崇悊宸ヨ壓銆佹樉寰粍缁囥€佹櫠浣撶己闄枫€佽〃寰佺粨鏋滃拰鏉愭枡鎬ц兘涔嬮棿鐨勫洜鏋滃叧绯汇€?tags:
+docs\02-lab-skills\index.md	瀹為獙瀹ゅ熀纭€鎶€鑳借
+docs\02-lab-skills\metallographic-preparation.md	閲戠浉鍒舵牱鍩虹娴佺▼
+docs\03-characterization\eds.md	EDS 鑳借氨鍒嗘瀽鍏ラ棬
+docs\03-characterization\index.md	鏉愭枡琛ㄥ緛鏂规硶璇?---
+docs\03-characterization\sem.md	SEM 鎵弿鐢甸暅鍏ラ棬
+docs\03-characterization\xrd.md	XRD 鐗╃浉鍒嗘瀽鍏ラ棬
+docs\04-microstructure-property\index.md	缁勭粐鈥旀€ц兘鍒嗘瀽璇?---
+docs\04-microstructure-property\process-structure-property.md	宸ヨ壓-缁勭粐-鎬ц兘閫昏緫閾?description: 璁粌鎶婂疄楠屽伐鑹恒€佹樉寰粍缁囧拰鎬ц兘缁撴灉鑱旂郴璧锋潵鐨勫垎鏋愯兘鍔涖€?level: Level 3
+docs\05-literature-writing\index.md	鏂囩尞闃呰涓庣鐮斿啓浣滆
+docs\05-literature-writing\paper-reading.md	濡備綍闃呰涓€绡囨潗鏂欒鏂?description: 鎻愪緵鏉愭枡鏂瑰悜璁烘枃闃呰鐨勫熀纭€娴佺▼鍜岀瑪璁版鏋躲€?level: Level 2
+docs\05-literature-writing\weekly-report.md	瀹為獙璁板綍涓庡懆鎶ユā鏉?description: 甯姪鎶婃瘡鍛ㄧ鐮旇缁冧换鍔°€佸疄楠岃繘灞曞拰闂鏁寸悊鎴愬彲澶嶆煡璁板綍銆?level: Level 2
+docs\06-data-analysis\index.md	鏁版嵁澶勭悊涓庡浘璋卞垎鏋愯
+docs\06-data-analysis\stress-strain.md	搴斿姏-搴斿彉鏇茬嚎鎬庝箞鐪?description: 寤虹珛闃呰鎷変几鏇茬嚎鍜屾彁鍙栧熀纭€鍔涘淇℃伅鐨勫叆闂ㄦ鏋躲€?level: Level 2
+docs\07-project-practice\index.md	璇鹃缁勯」鐩疄璺靛簱
+docs\08-review-cards\common-mistakes.md	甯歌璇尯涓庢槗閿欑偣
+docs\08-review-cards\index.md	澶嶄範鍗＄墖涓庨棶棰樺簱
+docs\08-review-cards\interview-qa.md	鏉愭枡绉戠爺闈㈣瘯甯歌闂
