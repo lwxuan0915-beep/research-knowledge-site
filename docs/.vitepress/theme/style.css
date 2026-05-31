@@ -26,6 +26,252 @@
   }
 }
 
+/* Lightweight academic visual upgrade */
+.VPHome {
+  position: relative;
+  overflow: hidden;
+  --rk-accent-blue: rgba(37, 99, 235, 0.22);
+  --rk-accent-teal: rgba(15, 118, 110, 0.18);
+  --rk-accent-gold: rgba(202, 138, 4, 0.18);
+  --rk-accent-titanium: rgba(71, 85, 105, 0.18);
+  --rk-card-bg: rgba(255, 255, 255, 0.72);
+  --rk-card-border: rgba(100, 116, 139, 0.16);
+  --rk-card-shadow: 0 12px 34px rgba(15, 23, 42, 0.065);
+}
+
+.VPHome::before {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 0;
+  height: min(1120px, 88%);
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(37, 99, 235, 0.13), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(15, 118, 110, 0.055), transparent 44%),
+    radial-gradient(circle at 78% 54%, rgba(202, 138, 4, 0.032), transparent 52%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.98), rgba(239, 246, 255, 0.5) 38%, rgba(248, 250, 252, 0.3) 66%, rgba(255, 255, 255, 0.12) 88%, rgba(255, 255, 255, 0));
+}
+
+.VPHome .VPHomeHero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: transparent;
+}
+
+.VPHome .VPHomeHero::before {
+  position: absolute;
+  inset: auto -12% -32% 44%;
+  z-index: -1;
+  height: 320px;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(circle, rgba(14, 165, 233, 0.065), transparent 68%),
+    radial-gradient(circle at 72% 26%, rgba(202, 138, 4, 0.04), transparent 58%);
+  filter: blur(14px);
+}
+
+.VPHome .VPHomeHero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.VPHome .VPHomeHero,
+.VPHome .VPFeatures,
+.VPHome .VPHomeContent {
+  position: relative;
+  z-index: 1;
+}
+
+.VPHome .VPHomeContent .vp-doc h2:first-child {
+  border-top-color: rgba(100, 116, 139, 0.1);
+}
+
+.VPHome .VPHomeHero .actions .VPButton {
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.VPHome .VPHomeHero .actions .VPButton.brand {
+  background: linear-gradient(135deg, #2563eb, #0f766e);
+  border-color: transparent;
+}
+
+.VPHome .VPHomeHero .actions .VPButton.alt {
+  border-color: rgba(100, 116, 139, 0.18);
+  background-color: rgba(255, 255, 255, 0.66);
+  backdrop-filter: blur(10px);
+}
+
+.VPHome .VPFeatures .VPFeature {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--rk-card-border);
+  background:
+    radial-gradient(circle at 100% 0, var(--rk-feature-accent, rgba(37, 99, 235, 0.05)), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), var(--rk-card-bg));
+  box-shadow: var(--rk-card-shadow);
+  backdrop-filter: blur(14px);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.VPHome .VPFeatures .VPFeature::before {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  content: "";
+  border-radius: 999px;
+  background: var(--rk-feature-accent, rgba(37, 99, 235, 0.05));
+  opacity: 0.42;
+  filter: blur(16px);
+  pointer-events: none;
+}
+
+.VPHome .VPFeatures .items .item:nth-child(1) .VPFeature {
+  --rk-feature-accent: rgba(37, 99, 235, 0.055);
+}
+
+.VPHome .VPFeatures .items .item:nth-child(2) .VPFeature {
+  --rk-feature-accent: rgba(51, 65, 85, 0.052);
+}
+
+.VPHome .VPFeatures .items .item:nth-child(3) .VPFeature {
+  --rk-feature-accent: rgba(202, 138, 4, 0.052);
+}
+
+.VPHome .VPFeatures .items .item:nth-child(4) .VPFeature {
+  --rk-feature-accent: rgba(15, 118, 110, 0.052);
+}
+
+.VPHome .VPFeatures .items .item:nth-child(5) .VPFeature {
+  --rk-feature-accent: rgba(109, 40, 217, 0.045);
+}
+
+.VPHome .VPFeatures .items .item:nth-child(6) .VPFeature {
+  --rk-feature-accent: rgba(148, 163, 184, 0.06);
+}
+
+.VPHome .VPFeatures .items .item:nth-child(7) .VPFeature {
+  --rk-feature-accent: rgba(22, 101, 52, 0.045);
+}
+
+.VPHome .VPFeatures .items .item:nth-child(8) .VPFeature {
+  --rk-feature-accent: rgba(71, 85, 105, 0.052);
+}
+
+.VPHome .VPFeatures .items .item:nth-child(9) .VPFeature {
+  --rk-feature-accent: rgba(217, 119, 6, 0.045);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .VPHome .VPHomeHero .actions .VPButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.13);
+  }
+
+  .VPHome .VPFeatures .VPFeature:hover {
+    transform: translateY(-2px);
+    border-color: rgba(37, 99, 235, 0.18);
+    box-shadow: 0 16px 42px rgba(15, 23, 42, 0.095);
+  }
+
+  .VPHome .VPFeatures .VPFeature:hover::before {
+    opacity: 0.62;
+  }
+}
+
+.dark .VPHome {
+  --rk-accent-blue: rgba(96, 165, 250, 0.24);
+  --rk-accent-teal: rgba(45, 212, 191, 0.18);
+  --rk-accent-gold: rgba(250, 204, 21, 0.16);
+  --rk-accent-titanium: rgba(148, 163, 184, 0.2);
+  --rk-card-bg: rgba(15, 23, 42, 0.54);
+  --rk-card-border: rgba(148, 163, 184, 0.16);
+  --rk-card-shadow: 0 12px 34px rgba(0, 0, 0, 0.2);
+}
+
+.dark .VPHome .VPHomeHero {
+  background: transparent;
+}
+
+.dark .VPHome::before {
+  background:
+    radial-gradient(circle at 12% 12%, rgba(96, 165, 250, 0.16), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(45, 212, 191, 0.065), transparent 44%),
+    radial-gradient(circle at 78% 54%, rgba(250, 204, 21, 0.032), transparent 52%),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.97), rgba(15, 23, 42, 0.82) 40%, rgba(30, 41, 59, 0.42) 68%, rgba(15, 23, 42, 0.14) 88%, rgba(15, 23, 42, 0));
+}
+
+.dark .VPHome .VPHomeContent .vp-doc h2:first-child {
+  border-top-color: rgba(148, 163, 184, 0.12);
+}
+
+.dark .VPHome .VPHomeHero::before {
+  background:
+    radial-gradient(circle, rgba(14, 165, 233, 0.06), transparent 68%),
+    radial-gradient(circle at 72% 26%, rgba(250, 204, 21, 0.035), transparent 58%);
+}
+
+.dark .VPHome .VPHomeHero .actions .VPButton.alt {
+  border-color: rgba(148, 163, 184, 0.18);
+  background-color: rgba(15, 23, 42, 0.5);
+}
+
+.dark .VPHome .VPFeatures .VPFeature {
+  border-color: var(--rk-card-border);
+  background:
+    radial-gradient(circle at 100% 0, var(--rk-feature-accent, rgba(96, 165, 250, 0.06)), transparent 30%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.68), var(--rk-card-bg));
+}
+
+.dark .VPHome .VPFeatures .VPFeature::before {
+  opacity: 0.34;
+}
+
+@media (max-width: 767px) {
+  .VPHome .VPHomeHero {
+    background: transparent;
+  }
+
+  .VPHome::before {
+    height: 900px;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(37, 99, 235, 0.1), transparent 34%),
+      radial-gradient(circle at 88% 30%, rgba(15, 118, 110, 0.045), transparent 42%),
+      linear-gradient(180deg, rgba(248, 250, 252, 0.96), rgba(239, 246, 255, 0.38) 54%, rgba(255, 255, 255, 0.12) 86%, rgba(255, 255, 255, 0));
+  }
+
+  .dark .VPHome .VPHomeHero {
+    background: transparent;
+  }
+
+  .dark .VPHome::before {
+    background:
+      radial-gradient(circle at 12% 8%, rgba(96, 165, 250, 0.12), transparent 34%),
+      radial-gradient(circle at 88% 30%, rgba(45, 212, 191, 0.052), transparent 42%),
+      linear-gradient(180deg, rgba(2, 6, 23, 0.96), rgba(15, 23, 42, 0.82) 54%, rgba(15, 23, 42, 0.14) 86%, rgba(15, 23, 42, 0));
+  }
+
+  .VPHome .VPHomeHero::before {
+    display: none;
+  }
+
+  .VPHome .VPFeatures .VPFeature {
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.07);
+    backdrop-filter: none;
+  }
+}
+
 @media (min-width: 1280px) {
   .VPHome .VPHomeHero {
     padding-top: 96px;
