@@ -4,13 +4,21 @@
 
 本文档用于记录“金属材料科研训练知识库”当前 VitePress 项目的本地开发、构建、预览和后续部署注意事项。
 
-本文档只说明部署准备和风险点，不表示项目已经完成线上部署。
+当前项目已经完成 GitHub Pages 线上部署，本文档同时记录当前部署状态和后续维护注意事项。
 
 ## 2. 当前项目状态
 
-当前项目仍处于本地成品化与部署准备阶段，尚未正式配置 GitHub Pages 或其他线上部署方式。
+当前项目已启用 GitHub Pages，部署来源为 GitHub Actions。
 
-当前已完成 README 完善、首页优化、导航一致性检查和 sidebar 命名统一。后续部署前仍需要确认最终部署平台、访问路径和是否需要配置 `base`。
+当前部署状态如下：
+
+- GitHub 仓库：`https://github.com/lwxuan0915-beep/research-knowledge-site`
+- 线上地址：`https://lwxuan0915-beep.github.io/research-knowledge-site/`
+- 部署方式：GitHub Actions + GitHub Pages；
+- 分支：`main`；
+- GitHub Pages Source：GitHub Actions；
+- GitHub Actions build 与 deploy 均已通过；
+- 线上网站人工检查通过。
 
 ## 3. 本地开发
 
@@ -69,10 +77,10 @@ npm.cmd run preview
 
 - 实际生效配置文件是 `.vitepress/config.mts`；
 - `docs/.vitepress/config.mts` 是转发文件；
-- 当前 `base` 未配置；
+- 当前 `base` 已配置为 `/research-knowledge-site/`；
 - 当前 `search.provider = 'local'`；
-- 当前未配置 GitHub Pages 专用部署项；
-- 当前未配置 deploy 脚本或自动部署流程。
+- 当前已配置 GitHub Pages 自动部署 workflow：`.github/workflows/deploy.yml`；
+- 当前 GitHub Pages Source 已设置为 GitHub Actions。
 
 当前 `docs/.vitepress/config.mts` 的作用是转发到根目录配置文件：
 
@@ -84,9 +92,7 @@ export { default } from '../../.vitepress/config.mts'
 
 ### 7.1 仅本地使用
 
-当前最推荐，风险最低。
-
-适合继续检查内容、导航、搜索、页面结构和移动端基础体验。使用方式是运行：
+适合日常内容编辑、导航检查、搜索检查、页面结构检查和移动端基础体验检查。使用方式是运行：
 
 ```powershell
 npm.cmd run dev
@@ -110,23 +116,21 @@ docs/.vitepress/dist
 
 ### 7.3 GitHub Pages
 
-GitHub Pages 可作为后续选项，但部署前必须确认仓库名和最终访问路径。
+当前项目已经使用 GitHub Pages 部署。
 
-如果部署到：
+当前线上地址为：
 
 ```text
-https://用户名.github.io/仓库名/
+https://lwxuan0915-beep.github.io/research-knowledge-site/
 ```
 
-通常需要在 VitePress 配置中设置：
+由于当前仓库是普通项目仓库 `research-knowledge-site`，不是用户主页仓库，因此 `.vitepress/config.mts` 中已配置：
 
 ```ts
-base: '/仓库名/'
+base: '/research-knowledge-site/'
 ```
 
-如果部署到用户主页或自定义域名根路径，则 `base` 可能保持默认。
-
-当前不要盲目修改 `base`。
+如后续更换仓库名、部署路径或使用自定义域名，需要重新评估 `base` 是否仍然正确。
 
 ### 7.4 静态服务器或对象存储
 
@@ -136,15 +140,14 @@ base: '/仓库名/'
 
 ## 8. GitHub Pages 风险点
 
-当前 GitHub Pages 的主要风险点包括：
+当前 GitHub Pages 已部署完成。后续维护时仍需注意以下风险点：
 
-- 当前无法从本地项目判断仓库名；
 - 仓库名会影响 `base`；
 - 错误配置 `base` 可能导致 CSS、JS、图片和页面资源路径失效；
-- 当前阶段不建议直接修改 `base`；
-- 真正部署前应先明确最终访问地址。
+- 如果更换仓库名、自定义域名或部署路径，需要重新评估 `base`；
+- 不应在没有明确部署路径变化时随意修改 `base`。
 
-部署前应先回答：
+后续变更部署方式前应先回答：
 
 ```text
 最终访问地址是什么？
@@ -172,9 +175,9 @@ assets/chunks/@localSearchIndexroot...js
 - 仅记录该 warning；
 - 若后续线上加载明显变慢，再评估搜索或构建优化。
 
-## 10. 推荐部署前检查清单
+## 10. 推荐部署检查清单
 
-部署前建议检查：
+部署和维护时建议检查：
 
 - `npm.cmd run build` 是否通过；
 - `npm.cmd run preview` 是否能正常打开；
@@ -191,8 +194,9 @@ assets/chunks/@localSearchIndexroot...js
 
 当前阶段建议：
 
-- 继续使用本地 `dev` 和 `preview` 检查；
+- 继续使用本地 `dev` 和 `preview` 检查内容改动；
+- 保持当前 GitHub Actions + GitHub Pages 部署方式；
 - 暂不修改 `base`；
-- 暂不配置 GitHub Pages；
+- 暂不修改 GitHub Actions workflow；
 - 暂不处理 chunk size warning；
-- 等最终验收完成后，再根据实际部署平台决定是否修改配置。
+- 后续如果更换仓库名、自定义域名或部署路径，再重新评估部署配置。

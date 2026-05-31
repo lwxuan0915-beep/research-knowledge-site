@@ -5,8 +5,12 @@
 - 项目路径：`D:\research-knowledge-site`；
 - 项目类型：VitePress 静态知识库网站；
 - 项目名称：金属材料科研训练知识库；
-- 当前阶段：第三阶段已完成，可作为阶段性成果保存；
+- 当前阶段：第三阶段已完成，第四阶段方向 A：GitHub Pages 线上部署已完成；
 - build 状态：`npm.cmd run build` 通过；
+- 线上地址：`https://lwxuan0915-beep.github.io/research-knowledge-site/`；
+- GitHub 仓库：`https://github.com/lwxuan0915-beep/research-knowledge-site`；
+- 当前部署方式：GitHub Actions + GitHub Pages；
+- 当前 `base`：`/research-knowledge-site/`；
 - 当前无阻断问题；
 - 已知 warning：Vite/Rollup chunk size warning，来源于 VitePress local search 本地搜索索引，当前记录不处理。
 
@@ -23,7 +27,8 @@
 - 两个“工艺—组织—性能逻辑链”入口已区分基础版和进阶版；
 - `README.md` 已完善；
 - `DEPLOYMENT.md` 已新增；
-- `FINAL_ACCEPTANCE_REPORT.md` 已生成。
+- `FINAL_ACCEPTANCE_REPORT.md` 已生成；
+- GitHub Pages 自动部署已配置并通过线上验收。
 
 ## 3. 当前真实目录结构
 
@@ -48,6 +53,7 @@ README.md
 DEPLOYMENT.md
 FINAL_ACCEPTANCE_REPORT.md
 PROJECT_HANDOFF_SUMMARY.md
+ONLINE_DEPLOYMENT_REPORT.md
 package.json
 ```
 
@@ -175,10 +181,12 @@ tags:
 
 ### 方向 A：线上部署
 
-- 确认 GitHub 仓库名；
-- 确认最终访问路径；
-- 判断是否需要配置 `base`；
-- 再进行 GitHub Pages 或其他静态部署。
+已完成：
+
+- GitHub Pages 地址：`https://lwxuan0915-beep.github.io/research-knowledge-site/`；
+- GitHub 仓库地址：`https://github.com/lwxuan0915-beep/research-knowledge-site`；
+- 当前部署方式：GitHub Actions + GitHub Pages；
+- 当前 `base`：`/research-knowledge-site/`。
 
 ### 方向 B：内容扩展
 
@@ -200,18 +208,21 @@ tags:
 - 移动端首页显示检查；
 - 文章页阅读体验检查；
 - 首页视觉微调；
+- 轻量学术视觉升级，例如区域分色、克制撞色、glassmorphism / 液态玻璃卡片效果；
 - 模块首页入口进一步统一。
+
+任何视觉升级都必须先只读排查，再最小 CSS 修改，再运行 `npm.cmd run build` 验证。
 
 ## 11. 下一步建议
 
 当前建议优先级为：
 
 1. 若目标是交付和展示：先进行线上部署路径确认；
-2. 若目标是继续学习和科研训练：优先扩展 EBSD、力学性能测试、腐蚀实验等材料科研核心内容；
+2. 若目标是继续学习和科研训练：优先扩展 EBSD、力学性能测试、腐蚀实验、电化学测试等材料科研核心内容；
 3. 若目标是长期维护：继续沿用“只读排查 → 最小修改 → build 验证 → 人工验收”的流程。
 
 ## 12. 最终交接结论
 
 ```text
-当前项目已经完成第三阶段阶段性交付。后续新对话或新 Codex 会话应先阅读 README.md、DEPLOYMENT.md、FINAL_ACCEPTANCE_REPORT.md 和 PROJECT_HANDOFF_SUMMARY.md，再决定进入部署、内容扩展或体验优化任务。当前无阻断问题，local search chunk size warning 已记录，可暂不处理。
+当前项目已经完成第三阶段阶段性交付，并已完成 GitHub Pages 线上部署。后续新对话或新 Codex 会话应先阅读 README.md、DEPLOYMENT.md、FINAL_ACCEPTANCE_REPORT.md、PROJECT_HANDOFF_SUMMARY.md 和 ONLINE_DEPLOYMENT_REPORT.md，再决定进入内容扩展或体验优化任务。当前无阻断问题，local search chunk size warning 已记录，可暂不处理。
 ```

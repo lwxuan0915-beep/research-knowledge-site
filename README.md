@@ -19,15 +19,21 @@
 
 ## 3. 当前项目阶段
 
-当前项目处于第三阶段：网站成品化、README、部署说明和最终验收优化。
+当前项目第三阶段已完成，第四阶段方向 A：GitHub Pages 线上部署已完成。
 
 阶段进展如下：
 
 - 第一阶段：VitePress 基础工程搭建完成；
 - 第二阶段：核心文章精修、模块首页整理、TEM 页面新增、首页和导航一致性优化已完成；
-- 当前第三阶段：README、部署说明、最终验收和后续维护规范完善中。
+- 第三阶段：README、部署说明、最终验收和后续维护规范已完成；
+- 第四阶段方向 A：GitHub Pages 线上部署已完成。
 
-当前重点是让项目说明、导航结构和交付状态保持一致。
+当前线上信息如下：
+
+- 在线访问地址：`https://lwxuan0915-beep.github.io/research-knowledge-site/`
+- GitHub 仓库地址：`https://github.com/lwxuan0915-beep/research-knowledge-site`
+
+后续可进入内容扩展或轻量视觉优化。
 
 ## 4. 技术栈
 
@@ -130,6 +136,8 @@ package.json
 - 首页 hero 区已进行视觉层级微调；
 - sidebar 与首页主要入口已完成一致性检查；
 - 两个“工艺—组织—性能逻辑链”入口已区分为基础版和进阶版；
+- `README.md`、`DEPLOYMENT.md`、`FINAL_ACCEPTANCE_REPORT.md` 和 `PROJECT_HANDOFF_SUMMARY.md` 已完成；
+- GitHub Pages 线上部署已完成，GitHub Actions build 与 deploy 均已通过；
 - `npm.cmd run build` 当前可通过。
 
 ## 10. 内容维护规则
@@ -206,10 +214,9 @@ tags:
 
 后续建议按以下方向推进：
 
-- 完善部署说明；
-- 进行最终验收；
 - 根据科研训练进展持续维护内容；
-- 后续可扩展 EBSD、力学性能测试、腐蚀实验、热处理、论文精读案例、组会汇报模板等内容。
+- 后续可扩展 EBSD、力学性能测试、腐蚀实验、热处理、电化学测试、论文精读案例、组会汇报模板等内容；
+- 可根据使用反馈进行轻量视觉优化，但应保持阅读性和工程稳定。
 
 ## 15. 注意事项
 
